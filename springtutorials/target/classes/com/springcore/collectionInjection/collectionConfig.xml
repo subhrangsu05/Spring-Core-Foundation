@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id = "employee1" class = "com.springcore.collectionInjection.Employee" name = "employee1">
+        <property name ="empName">
+            <value>Subhrangsu Sinha</value>
+        </property>
+        <property name ="empPhones">
+            <list>
+                <value>6289452324</value>
+                <value>7044750217</value>
+            </list>
+        </property>
+        <property name = "empAddresses">
+            <set>
+                <value>Kolkata</value>
+                <value>Howrah</value>
+            </set>
+        </property>
+        <property name = "empCourses">
+            <map>
+                <entry key = "Java Spring-boot" value = "1 Month"></entry>
+                <entry key = "Angular JS" value = "1 Month"></entry>
+            </map>
+        </property>
+        </bean>
+</beans>

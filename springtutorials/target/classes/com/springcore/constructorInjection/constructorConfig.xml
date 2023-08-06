@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id ="person" class = "com.springcore.constructorInjection.Person" name = "person">
+            <constructor-arg type = "String">
+                <value>Subhrangsu Sinha</value>
+            </constructor-arg>
+            <constructor-arg type = "int" value = "3001"/>
+            <constructor-arg ref = "referenceConstructor" />
+        </bean>
+        <bean id = "referenceConstructor" class = "com.springcore.constructorInjection.ReferenceConstructor" name = "referenceConstructor">
+            <constructor-arg>
+                <list>
+                    <value>Java</value>
+                    <value>Python</value>
+                </list>
+            </constructor-arg>
+        </bean>
+</beans>

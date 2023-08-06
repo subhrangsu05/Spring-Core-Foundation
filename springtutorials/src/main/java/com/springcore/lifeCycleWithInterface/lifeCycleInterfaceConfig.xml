@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id = "courses" class ="com.springcore.lifeCycleWithInterface.Courses" name = "courses">
+            <constructor-arg>
+                <map>
+                    <entry key ="Data Science" value = "1 months"/>
+                    <entry key = "Priciple of Design" value = "3 months"/>
+                    <entry key = "Python" value = "1 monnths"/>
+                </map>
+            </constructor-arg>
+            <!-- <property name="courses">
+                <map>
+                    <entry key ="Data Science" value = "1 months"/>
+                    <entry key = "Priciple of Design" value = "3 months"/>
+                    <entry key = "Python" value = "1 monnths"/>
+                </map>
+            </property> -->
+        </bean>
+</beans>
